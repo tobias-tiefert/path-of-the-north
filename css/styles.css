@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+}
+
+/* --- FARBEN ---*/
+:root {
+  --gelb: #FFDE5C;
+  --braun: #453E25;
+  --beige: #EAE6D5;
+  --weiß: #ffffff;
+  --schwarz: #000000;
+  --blau: #254365;
+  --rot: #652525
+
+
+}
+
+/* --- SCHRIFTEN ---*/
+
+@font-face {
+   font-family:"north";
+   font-style: normal;
+   font-weight: 700;
+   src:
+   url(../fonts/North.woff2) format('woff2')
+}
+body{
+    background-color: var(--beige);
+    color: var(--braun);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-family: "north";
+}
