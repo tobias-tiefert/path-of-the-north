@@ -7,7 +7,7 @@
   --gelb: #FFDE5C;
   --braun: #453E25;
   --beige: #EAE6D5;
-  --weiß: #ffffff;
+  --weiss: #ffffff;
   --schwarz: #000000;
   --blau: #254365;
   --rot: #652525
@@ -25,10 +25,207 @@
    url(../fonts/North.woff2) format('woff2')
 }
 body{
-    background-color: var(--beige);
+    background-color: var(--gelb);
     color: var(--braun);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 h1{
-    font-family: "north";
+    font-family: "north", Helvetica, Arial, sans-serif;
+    color: var(--schwarz);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+nav{
+  background-color: var(--gelb);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+a#logo{
+  font-family: "north", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: var(--schwarz);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+ul#navigation{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-self:end;
+
+}
+ul#navigation li{
+  list-style: none;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 5px 0;
+}
+ul#navigation li.active{
+  border-bottom: 2px solid var(--schwarz);
+}
+ul#navigation li.active a{
+  color: var(--schwarz);
+}
+ul#navigation li a{
+  color: var(--braun);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+a.button, ul#navigation li a.button{
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--schwarz);
+  border-radius: 0.5rem;
+  color: var(--gelb);
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+a.button:hover, ul#navigation li a.button:hover{
+  background-color: var(--braun);
+
+}
+main{
+  background-color: var(--beige);
+}
+header.intro{
+  background-color: var(--gelb);
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+div.intro-text{
+  flex 1;
+  padding: 0 3rem 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+img.intro-img{
+  object-fit: cover;
+  width: 50%;
+  min-height: 32rem;
+  flex: 1;
+}
+p{
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+h2{
+  font-family: "north", Helvetica, Arial, sans-serif;
+    color: var(--schwarz);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+div.learn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem 5rem;
+}
+ul.learn-items{
+  margin: 1.5rem 0 0 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ul.learn-items li{
+  list-style: none;
+  background-color: var(--weiss);
+  border-radius: 1rem;
+  width: 15rem;
+  box-shadow: 0 24px 34px 0 rgba(0, 0, 0, 0.14), 0 24px 20px -15px rgba(0, 0, 0, 0.25);
+}
+ul.learn-items li img{
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  height: 14rem;
+  object-fit: cover;
+}
+.learn-items-text{
+  padding: 1rem 1rem 1.8rem 1rem;
+}
+.learn-items-text h3{
+  font-family: "north", Helvetica, Arial, sans-serif;
+    color: var(--rot);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.learn-items-text p{
+  margin: 0;
+}
+.quote-div{
+  background-color: var(--blau);
+  color: var(--beige);
+  padding: 7rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quote-div blockquote{
+  font-family: Georgia;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight:300;
+  line-height: 2.5rem; 
+  margin: 0;
+  padding: 0;
+  max-width: 30rem;
+}
+.register-cta-bg{
+  display: flex;
+  background-color: var(--schwarz);
+  padding: 3rem;
+  justify-content: center;
+}
+.register-cta{
+  background-color: var(--gelb);
+  border-radius: 1rem;
+  max-width: 70rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+.register-cta div{
+  flex: 2;
+}
+.register-cta .button-container{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer{
+  background-color: var(--beige);
+  padding: 5rem;
+}
+
+@media (max-width: 750px) {
+  ul#navigation{
+    display: none;
+  }
+  header.intro{
+    flex-direction: column;
+  }
+  img.intro-img{
+    width: 100%;
+    min-height: auto;
+    max-height: 20rem;
+  }
+  div.intro-text{
+    padding: 0 2rem 2rem 2rem;
+  }
+  .register-cta{
+    flex-direction: column;
+  }
 }
