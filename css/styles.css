@@ -16,14 +16,14 @@
 }
 
 /* --- SCHRIFTEN ---*/
-
+/*
 @font-face {
    font-family:"north";
    font-style: normal;
    font-weight: 700;
    src:
    url(../fonts/North.woff2) format('woff2')
-}
+}*/
 body{
     background-color: var(--gelb);
     color: var(--braun);
@@ -34,7 +34,8 @@ body{
     flex-direction: column;
 }
 h1{
-    font-family: "north", Helvetica, Arial, sans-serif;
+    font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+    font-weight: 400;
     color: var(--schwarz);
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -47,7 +48,7 @@ nav{
   justify-content: space-between;
 }
 a#logo{
-  font-family: "north", Helvetica, Arial, sans-serif;
+  font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   color: var(--schwarz);
   text-decoration: none;
@@ -119,7 +120,8 @@ p{
   line-height: 1.5rem;
 }
 h2{
-  font-family: "north", Helvetica, Arial, sans-serif;
+  font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+  font-weight: 400;
     color: var(--schwarz);
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -155,7 +157,8 @@ ul.learn-items li img{
   padding: 1rem 1rem 1.8rem 1rem;
 }
 .learn-items-text h3{
-  font-family: "north", Helvetica, Arial, sans-serif;
+  font-family: "Caesar Dressing", Helvetica, Arial, sans-serif;
+  font-weight: 400;
     color: var(--rot);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
